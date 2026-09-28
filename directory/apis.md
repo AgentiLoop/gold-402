@@ -147,6 +147,7 @@ x402-enabled APIs and production services. No API keys. No accounts. Pay USDC pe
 - [MadeOnSol](https://madeonsol.com/.well-known/x402) — Solana KOL trade feeds, deployer reputation, token risk/buyer-quality scoring, and wallet PnL for AI agents, $0.005-$0.02 USDC on Solana with self-verified settlement (no facilitator); manifest lists all 25 endpoints. Example: `GET /api/x402/token/{mint}`.
 
 - [Solana Wallet Research](https://solana-wallet-research.empty-thistle.workers.dev/.well-known/x402) — Returns bounded finalized public-data reports for Solana wallet addresses for $0.01 USDC per call on Solana mainnet via x402.
+- [Horizon Pulse](https://horizonpulse.dev/.well-known/x402) — Returns crypto market data (BTC/ETH/SOL pulse, RSI/MACD/Bollinger signals, DefiLlama yields, Base+Ethereum wallet portfolio, gas, OKX funding) and web utilities (URL to markdown, SSRF-safe HTTP proxy, structured page extract) for $0.005-$0.04 USDC per call on Base mainnet via x402 v2; manifest lists all 11 route/method pairs. Example: `GET /api/pulse`. ([OpenAPI](https://horizonpulse.dev/openapi.json)) ([llms.txt](https://horizonpulse.dev/llms.txt))
 
 ## Finance & FX
 
