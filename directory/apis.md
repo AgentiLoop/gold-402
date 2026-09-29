@@ -147,6 +147,7 @@ x402-enabled APIs and production services. No API keys. No accounts. Pay USDC pe
 - [MadeOnSol](https://madeonsol.com/.well-known/x402) — Solana KOL trade feeds, deployer reputation, token risk/buyer-quality scoring, and wallet PnL for AI agents, $0.005-$0.02 USDC on Solana with self-verified settlement (no facilitator); manifest lists all 25 endpoints. Example: `GET /api/x402/token/{mint}`.
 
 - [Solana Wallet Research](https://solana-wallet-research.empty-thistle.workers.dev/.well-known/x402) — Returns bounded finalized public-data reports for Solana wallet addresses for $0.01 USDC per call on Solana mainnet via x402.
+- [bilbop Solana Mint Info](https://api.bilbop.org/v1/sol-mint-info) — Returns on-chain supply, decimals and mint/freeze authorities for a Solana SPL mint for 0.01 USDC on Solana per POST call.
 
 ## Finance & FX
 
