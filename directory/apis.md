@@ -43,6 +43,7 @@ x402-enabled APIs and production services. No API keys. No accounts. Pay USDC pe
 - [AgentPay Summarize](https://agentpay.help/v1/summarize) — Summarizes up to 20,000 characters of text into a 250-word summary returned as JSON. `POST` only, $0.01 USDC on Base mainnet. Example: `POST /v1/summarize {"text":"..."}`. ([Manifest](https://agentpay.help/.well-known/x402)) ([MCP](https://agentpay.help/mcp)) ([OpenAPI](https://agentpay.help/openapi.json))
 
 ---
+- [Agent Council](https://council.cyberwarex.com/council) — Sends one question to three or four different LLMs that answer independently, then returns a single chaired verdict with a confidence score, the points all of them agreed on, and the dissent that held; a grounded tier buys evidence (honeypot simulation, OFAC sanctions screen, page content, SEC profile, web results) before the panel rules and itemises what it spent. $0.01 quick, $0.03 deep, $0.05-$0.12 grounded, USDC on Base mainnet. Example: `GET /council?q=Should+I+accept+a+token+launched+yesterday+as+payment%3F`. ([MCP endpoint](https://council.cyberwarex.com/mcp)) ([docs](https://cyberwarex.com/assets/council-quickstart.html))
 
 ## Data & Research
 
