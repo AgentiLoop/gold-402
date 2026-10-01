@@ -149,6 +149,7 @@ x402-enabled APIs and production services. No API keys. No accounts. Pay USDC pe
 
 - [Solana Wallet Research](https://solana-wallet-research.empty-thistle.workers.dev/.well-known/x402) — Returns bounded finalized public-data reports for Solana wallet addresses for $0.01 USDC per call on Solana mainnet via x402.
 - [Market Intelligence API](https://api.marketintelligenceapi.com/.well-known/x402) — Live trade-flow intelligence for crypto and tokenized US stocks from on-chain swaps (buy/sell pressure, signals, opportunity scans, perp positioning, smart-money wallets, token risk and rates), $0.001–$0.05 USDC per call via x402 on Base, Polygon, Arbitrum or Solana.
+- [bilbop Solana Mint Info](https://api.bilbop.org/v1/sol-mint-info) — Returns on-chain supply, decimals and mint/freeze authorities for a Solana SPL mint for 0.01 USDC on Solana per POST call.
 
 ## Finance & FX
 
