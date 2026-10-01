@@ -6,8 +6,8 @@ Every entry is live-probed like the rest of the directory: a maintainer confirme
 
 ---
 
-> ★ **Featured — September 2026: [402Signal](https://402signal.com/route)**
-> A router that fails closed: it authorizes payment only once it has found a live, eligible endpoint, so a typed miss costs nothing. This shelf ran empty in August; this is its first pick.
+> ★ **Featured — October 2026: [x402-list](https://x402-list.com)**
+> A directory built for the machine reading it: a no-auth REST feed and a hosted MCP server for finding and checking an endpoint before an agent pays, not after.
 
 ---
 

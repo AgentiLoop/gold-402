@@ -4,8 +4,8 @@ Tutorials, videos, articles, blog posts, and interactive learning tools for x402
 
 ---
 
-> ★ **Featured — September 2026: [The Agent Times](https://theagenttimes.com)**
-> Independent news for the agent economy, published with citations and confidence scores and queryable by agents directly — built for the moment before an agent installs something, not for humans reading after the fact.
+> ★ **Featured — October 2026: [How x402 paid links work (Payfirst)](https://www.payfirst.app/guides/x402-paid-links)**
+> The part most tutorials skip: what a buyer does when it can't tell whether settlement went through. x402 V2 headers, URL delivery and retry handling, written for the side that pays.
 
 ## Quick Start Guides
 

@@ -4,8 +4,8 @@ Infrastructure, agent frameworks, A2A protocols, multi-agent orchestration, and 
 
 ---
 
-> ★ **Featured — September 2026: [Skyfire](https://docs.skyfire.xyz)**
-> Agent identity and payment credentials as ES256 JWTs with a public JWKS endpoint — the rare pattern in this space a stranger can verify without contacting the issuer. Worth studying if you're designing receipts of your own.
+> ★ **Featured — October 2026: [Bermuda](https://www.bermudabay.xyz)**
+> Sender privacy for x402: Noir zero-knowledge proofs on Base, so an agent can pay without showing its balance and payment history to every seller it calls. Nearly every payment on these shelves is public on-chain; this is one of the few entries working on that.
 
 ## Foundation & Protocol
 

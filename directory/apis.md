@@ -10,8 +10,8 @@ x402-enabled APIs and production services. No API keys. No accounts. Pay USDC pe
 
 ---
 
-> ★ **Featured — September 2026: [Forge Attestation](https://forgesignals.org/.well-known/forge-attestation)**
-> Signed third-party evidence for x402 transactions that labels every claim `witnessed` or `asserted` — the same distinction this shelf makes about its own entries, applied as a product. Nothing here claims correctness, only what was actually observed.
+> ★ **Featured — October 2026: [crosscheck accept](https://crosscheckapi.com/v1/accept)**
+> Checks what one agent delivers to another against the task it was given, before the buyer pays or releases escrow — counts, required fields and sums recomputed in code, every result bound to a signed receipt. The gap between "paid" and "delivered" that x402 itself doesn't cover, sold as a $0.03 call. New to the shelf this week, knocked live on a POST before it was listed.
 
 ## AI Services
 - [D-007 Document Classify and Rename Plan](https://friction-product-commerce-production.id4-score.workers.dev/v1/x402/document-classify-rename-plan) — Generates a dry-run classification, traversal-safe filename, folder proposal, and duplicate signals for one supplied document record. $0.01 USDC on Base mainnet via x402. Example: POST /v1/x402/document-classify-rename-plan {"originalFilename":"invoice-2026-09.txt","extension":".txt","size":1024,"textExcerpt":"Invoice for order","metadata":{}}.

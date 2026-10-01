@@ -142,25 +142,25 @@ _All figures above are ours and reproducible. Where we could not reach something
 
 ## Featured This Month
 
-[![24K Featured](https://img.shields.io/badge/24K_Featured-2026--09-C0C0C0?style=plastic)](FEATURED.md)
+[![24K Featured](https://img.shields.io/badge/24K_Featured-2026--10-C0C0C0?style=plastic)](FEATURED.md)
 
-**September 2026 — one pick per shelf.** Each shelf opens with its pick and the write-up. Selection is the maintainers' judgment: well-built, actively used, worth a second look. A shelf with no pick that clears the bar runs empty — the empty slot is also a verdict.
+**October 2026 — one pick per shelf.** Each shelf opens with its pick and the write-up. Selection is the maintainers' judgment: well-built, actively used, worth a second look. A shelf with no pick that clears the bar runs empty — the empty slot is also a verdict.
 
-| Shelf | September pick |
+| Shelf | October pick |
 |---|---|
-| APIs & Services | [Forge Attestation](https://forgesignals.org/.well-known/forge-attestation) |
-| MCP Servers | [Council of AI GSPC MCP](https://councilof.ai/mcp) |
-| SDKs & Libraries | [x402-rs](https://github.com/x402-rs/x402-rs) |
-| Facilitators | [NEAR x402 Facilitator](https://x402.mikedotexe.com/) |
-| Frameworks | [@moltrust/x402](https://www.npmjs.com/package/@moltrust/x402) |
-| Tools | [nohumans.directory](https://nohumans.directory) |
-| Security | [MIDAX402](https://midax402.com/.well-known/x402.json) |
-| Ecosystem | [Skyfire](https://docs.skyfire.xyz) |
-| The Global Agent Economy | [Alipay Open Platform](https://open.alipay.com) |
-| Learning | [The Agent Times](https://theagenttimes.com) |
-| Community | [Human Pages](https://humanpages.ai) |
-| Market Data | [MCP Scores](https://mcpscores.com) |
-| Aggregators & Proxies | [402Signal](https://402signal.com/route) |
+| APIs & Services | [crosscheck accept](https://crosscheckapi.com/v1/accept) |
+| MCP Servers | [Base toolbox](https://basetoolbox.cartonpliant.workers.dev/.well-known/mcp.json) |
+| SDKs & Libraries | [x402-dotnet](https://github.com/michielpost/x402-dotnet) |
+| Facilitators | [ArisPay](https://facilitator.arispay.app) |
+| Frameworks | [x402-rails](https://github.com/quiknode-labs/x402-rails) |
+| Tools | [ToolMeter](https://snappedai.com/toolmeter/) |
+| Security | [ICME Labs](https://docs.icme.io) |
+| Ecosystem | [Bermuda](https://www.bermudabay.xyz) |
+| The Global Agent Economy | [Beckn Protocol](https://github.com/ONDC-Official) |
+| Learning | [How x402 paid links work (Payfirst)](https://www.payfirst.app/guides/x402-paid-links) |
+| Community | [Dev.to #x402](https://dev.to/t/x402) |
+| Market Data | [Dune Analytics x402](https://dune.com/x402) |
+| Aggregators & Proxies | [x402-list](https://x402-list.com) |
 
 [Past features →](FEATURED.md)
 

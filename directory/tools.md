@@ -4,8 +4,8 @@ Development tools, CLI utilities, monitoring, analytics, and CI/CD integrations 
 
 ---
 
-> ★ **Featured — September 2026: [nohumans.directory](https://nohumans.directory)**
-> Runs the same experiment gold-402 ran in July, at roughly four times the sample size: 550 endpoints actually purchased with real USDC, 332 delivered, full outcome breakdown and the SQL behind it published. This is the kind of check we'd rather see more of, not less.
+> ★ **Featured — October 2026: [ToolMeter](https://snappedai.com/toolmeter/)**
+> Seller-readiness checks before a paid endpoint launches: pricing metadata, `.well-known/x402`, OpenAPI, agent metadata, buyer-safety. Our July delivery check found most failures were front doors, not services. This tool works on the front door.
 
 ## CLI Tools
 

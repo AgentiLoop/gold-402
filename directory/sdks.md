@@ -16,8 +16,8 @@ Client and server-side libraries for building with x402. Start with the official
 
 ---
 
-> ★ **Featured — September 2026: [x402-rs](https://github.com/x402-rs/x402-rs)**
-> The real Rust implementation — Axum middleware, reqwest client wrapper, self-hostable facilitator, 41 published versions. Worth naming directly this month: a thin placeholder crate named `x402` also exists on crates.io and ships no working code.
+> ★ **Featured — October 2026: [x402-dotnet](https://github.com/michielpost/x402-dotnet)**
+> x402 for .NET, a runtime the Foundation's official SDKs don't ship. Still being worked on — last pushed 2026-09-18 — which is more than most single-language ports on this shelf can say.
 
 ## TypeScript / JavaScript
 

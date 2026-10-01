@@ -4,8 +4,8 @@ Security tools, spending controls, audit resources, and best practices for x402 
 
 ---
 
-> ★ **Featured — September 2026: [MIDAX402](https://midax402.com/.well-known/x402.json)**
-> Signed EIP-712 conformance verdicts on a public registry, with a paid board-position ladder kept in a separate column from the verdict itself — no payment changes a rating or its verification-date ordering. The pay-to-rank problem, solved by not letting the two touch.
+> ★ **Featured — October 2026: [ICME Labs](https://docs.icme.io)**
+> Turns a plain-language spending policy into SMT-LIB logic and has a solver check an agent's action against it — a proof the rule held, not a score that says it probably did. $0.10 USDC on Base.
 
 ## Smart Contract Audits
 

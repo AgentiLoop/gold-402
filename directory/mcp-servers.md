@@ -6,8 +6,8 @@ x402-enabled MCP servers. AI agents (Claude, Cursor, any MCP client) can call th
 
 ---
 
-> ★ **Featured — September 2026: [Council of AI GSPC MCP](https://councilof.ai/mcp)**
-> Calls itself a measurement MCP, not a certification — the same line gold-402 drew when it retired its own verified badge. Free board tools, paid evidence tools over x402.
+> ★ **Featured — October 2026: [Base toolbox](https://basetoolbox.cartonpliant.workers.dev/.well-known/mcp.json)**
+> Checks a Base swap, a transfer, or your leftover token allowances before you sign — preflight as a tool call, on the chain most of this shelf settles on. The constants route is free, so you can see what it reads before you pay for anything.
 
 ## General Utility
 
