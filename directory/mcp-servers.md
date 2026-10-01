@@ -63,7 +63,6 @@ x402-enabled MCP servers. AI agents (Claude, Cursor, any MCP client) can call th
 
 - [ShieldAPI MCP](https://www.npmjs.com/package/shieldapi-mcp) — 9-tool security MCP: password breach, email breach, domain/IP reputation, URL safety, full security scan, prompt injection detection, skill security scanning. x402 USDC on Base or free demo mode. `npx shieldapi-mcp`.
 - [MCP Security Snapshot Server](https://github.com/Seiya-wasabi/mcp-server-security-snapshot) — Pay-per-call HTTP security header scanning. $0.05 USDC on Base.
-- [lso-mcp](https://mcp.lonestaroracle.xyz) — 46 LoneStarOracle data tools: token and wallet risk, contract audits, whale tracking, DeFi and stablecoin risk, market and macro data, weather. x402-metered USDC on Base. ([GitHub](https://github.com/Homie4570/lso-mcp))
 
 ---
 
@@ -88,7 +87,6 @@ x402-enabled MCP servers. AI agents (Claude, Cursor, any MCP client) can call th
 - [Razorpay MCP Server](https://github.com/razorpay/razorpay-mcp-server) — Official MCP server from one of India's largest payment processors. Its `AGENTS.md` is worth reading on its own — an explicit convention set for agent-authored tools, including a money-unit safety rule.
 - [PayCrow](https://github.com/michu5696/paycrow) — Escrow protection for autonomous agent payments. Trust scoring from 4 on-chain sources + USDC escrow with dispute resolution on Base. 10 MCP tools: `safe_pay` (trust-informed escrow) and `trust_gate` (go/no-go before payment). ([npm](https://www.npmjs.com/package/paycrow))
 - [Arbitova](https://arbitova.com) — Escrow + transparent AI arbitration (N=3 LLM majority vote). Sub-task chained escrow for agent swarms. 0.5% success fee, 2% dispute only. 8 MCP tools. ([npm SDK](https://www.npmjs.com/package/@arbitova/sdk)) ([MCP](https://www.npmjs.com/package/@arbitova/mcp-server))
-- [PayBot MCP](https://github.com/RBKunnela/paybot-mcp) — Claude and AI agents make autonomous x402 payments. Wallet management, transaction history, configurable spending limits. ([npm](https://www.npmjs.com/package/paybot-mcp))
 - [agentpay-mcp](https://github.com/up2itnow0822/agentpay-mcp) — Native x402 client-side payment execution inside the agent loop. Detects 402 responses and completes transactions with no human handoff. ([npm](https://www.npmjs.com/package/agentpay-mcp))
 - [402-mcp](https://github.com/forgesworn/402-mcp) — Payment-rail-agnostic x402 MCP client. No Lightning node required, multi-wallet support, encrypted credentials.
 

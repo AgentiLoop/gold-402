@@ -42,5 +42,4 @@ Where x402 builders hang out, get help, and find work.
 
 ## Events
 
-- [ETHDenver x402 Workshop](https://www.youtube.com/watch?v=ethdenver-x402) — Hands-on workshop from ETHDenver 2025.
 - x402 Hackathons — Check the official Discord for upcoming hackathon announcements and prizes.
