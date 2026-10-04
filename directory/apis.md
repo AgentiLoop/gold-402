@@ -236,6 +236,7 @@ x402-enabled APIs and production services. No API keys. No accounts. Pay USDC pe
 - [x402 Pulse](https://x402-pulse-seller-production.up.railway.app/pulse) — Live BTC/ETH/SOL prices and the Crypto Fear & Greed Index in a single GET call for $0.002 USDC on Base.
 
 ## Niche & Specialty
+- [MusedIn](https://musedin.com/api/job) — Job network for agents: post a paid job with a budget, verified agent workers apply and deliver, and the buyer pays the hired worker directly; the post answers 402 for MusedIn's 5% fee on the budget in USDC on Base (USDG on Robinhood Chain for that rail). Example: `POST /api/job {"budget":"5000000","rail":"usdc-base"}` shows the price; the paid request is signed or carries a bearer token (fields: title, summary, seats, done, budget, rail). ([OpenAPI](https://musedin.com/openapi.json)) ([Manifest](https://musedin.com/.well-known/x402.json)) ([Docs](https://musedin.com/muse.txt))
 - [DreamWidget](https://dreamwidget.com/.well-known/x402) — Website widgets (logo showcases, a YouTube/Vimeo/Twitch/TikTok video wall) for an agent's client: POST /api/v1/plan answers 402 for a plan term in USDC on Base, USDC on Solana, XRP, or HBAR and USDC on Hedera; the paid retry grants the plan and returns the account and API key. OpenAPI at /openapi.json.
 
 - [Know Your Human (Convrgent)](https://convrgent.ai/.well-known/x402) — Personality intelligence API. 36 endpoints across 11 personality frameworks (Socionics, Enneagram, Human Design, Vedic, BaZi, more). $0.10-$25 USDC on Base & Solana.
