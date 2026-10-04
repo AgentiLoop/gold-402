@@ -28,7 +28,7 @@ on:
     # URL -- is left with a red X standing against a body that no longer
     # exists, and no way to clear it. Safe here only because this job never
     # checks out PR code; see the header.
-    types: [opened, synchronize, edited]
+    types: [opened, synchronize, edited, reopened]
     paths:
       - 'directory/**'
       - 'README.md'
@@ -238,18 +238,20 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: [
-                "**Gold-402 Verification: PASSED**",
+                "**Gold-402 Gate: PASSED**",
                 "",
                 "URL checked: `" + url + "`" + (why ? "  _(" + why + ")_" : ""),
                 "Rule applied: " + rule,
                 "Result: " + reason,
                 "",
-                "This PR has been approved for merge. A maintainer will review and merge shortly.",
+                mode === 'resource'
+                  ? "Gate passed: the resource is publicly reachable. A maintainer will check it before merging."
+                  : "Gate passed: the endpoint answers 402 as described. A maintainer will knock it live before merging.",
                 "",
                 "---",
                 mode === 'resource'
-                  ? "*Verified by Gold-402. This check confirms the resource is publicly reachable. It makes no claim about x402 compliance, and is not an endorsement.*"
-                  : "*Verified by Gold-402. Verification confirms x402 technical compliance only. It does not constitute endorsement of the service.*"
+                  ? "*Checked by Gold-402. This check confirms the resource is publicly reachable. It makes no claim about x402 compliance, and is not an endorsement.*"
+                  : "*Checked by Gold-402. The check confirms x402 technical compliance only. It does not constitute endorsement of the service.*"
               ].join('\n')
             })
 
@@ -275,7 +277,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: [
-                "**Gold-402 Verification: FAILED**",
+                "**Gold-402 Gate: FAILED**",
                 "",
                 "URL checked: `" + url + "`" + (why ? "  _(" + why + ")_" : ""),
                 "Rule applied: " + rule,
@@ -309,36 +311,34 @@ jobs:
       # stranger's PR shut contradicts the door doctrine: a hold gets a warm comment
       # and a route back in. A closed PR is not a route back in -- pushing a fix to a
       # closed PR does not reopen it. So: label it, leave it open, let a hand look.
-      - name: Label failing PRs for a human look
-        if: steps.result.outputs.result != 'pass'
+      # LABELS. The gate owns gate-passed and gate-failed and keeps exactly one of them on
+      # the PR: each run removes the other, then adds its own. needs-work belongs to
+      # maintainers and this job never touches it. All three come off when the PR closes
+      # (label-cleanup.yml). Failing PRs are still never auto-closed: label it, leave it
+      # open, let a hand look.
+      - name: Set the gate label
         uses: actions/github-script@v7
+        env:
+          GATE_RESULT: ${{ steps.result.outputs.result }}
         with:
           script: |
+            const passed = process.env.GATE_RESULT === 'pass';
+            const add = passed ? 'gate-passed' : 'gate-failed';
+            const drop = passed ? 'gate-failed' : 'gate-passed';
+            const base = {
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            };
             try {
-              await github.rest.issues.addLabels({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                labels: ['needs-work']
-              })
-            } catch(e) {
-              console.log('Label not found, skipping:', e.message)
+              await github.rest.issues.removeLabel({ ...base, name: drop });
+            } catch (e) {
+              console.log('Nothing to remove:', e.message);
             }
-
-      - name: Label passing PRs
-        if: steps.result.outputs.result == 'pass'
-        uses: actions/github-script@v7
-        with:
-          script: |
             try {
-              await github.rest.issues.addLabels({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                labels: ['verified', 'ready-to-merge']
-              })
-            } catch(e) {
-              console.log('Labels not found, skipping:', e.message)
+              await github.rest.issues.addLabels({ ...base, labels: [add] });
+            } catch (e) {
+              console.log('Label not found, skipping:', e.message);
             }
 
       - name: Fail workflow if check failed
